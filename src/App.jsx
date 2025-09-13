@@ -1,34 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Cardd } from './pages/Cardd'
+import { LandingPage } from './pages/LandingPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className=''>
+      <LandingPage />
+      <div className='grid grid-cols-3 gap-5 mx-3'>
+        <Cardd nameTag={"ARTWORK-1"} priceTag={"$100"} imgTag={'pro-1.jpg'} />
+        <Cardd nameTag={"ARTWORK-2"} priceTag={"$250"} imgTag={'pro-2.jpg'} />
+        <Cardd nameTag={"ARTWORK-3"} priceTag={"$100"} imgTag={'pro-3.jpg'} />
+        <Cardd nameTag={"ARTWORK-4"} priceTag={"$250"} imgTag={'pro-4.jpg'} />
+        <Cardd nameTag={"ARTWORK-5"} priceTag={"$100"} imgTag={'pro-1.jpg'} />
+        <Cardd nameTag={"ARTWORK-6"} priceTag={"$250"} imgTag={'pro-2.jpg'} />
+        <Cardd nameTag={"ARTWORK-7"} priceTag={"$100"} imgTag={'pro-3.jpg'} />
+        <Cardd nameTag={"ARTWORK-8"} priceTag={"$250"} imgTag={'pro-4.jpg'} />
+        <Cardd nameTag={"ARTWORK-9"} priceTag={"$100"} imgTag={'pro-1.jpg'} />
+        <Cardd nameTag={"ARTWORK-10"} priceTag={"$250"} imgTag={'pro-2.jpg'} />
+        <Cardd nameTag={"ARTWORK-11"} priceTag={"$100"} imgTag={'pro-3.jpg'} />
+        <Cardd nameTag={"ARTWORK-12"} priceTag={"$250"} imgTag={'pro-4.jpg'} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
