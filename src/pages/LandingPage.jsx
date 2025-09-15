@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar'
 import { SecNavbar } from '../components/SecNavbar'
 import { ImgContainer } from '../components/ImgContainer'
 import { FlagGallery} from '../components/FlagGallery'
+import { Footer } from '../components/Footer'
 
 
 export const LandingPage = () => {
@@ -12,6 +13,7 @@ export const LandingPage = () => {
             <SecNavbar />
             <ImgContainer />
             <FlagGallery/>
+            <Footer/>
         </div>
     )
 }
